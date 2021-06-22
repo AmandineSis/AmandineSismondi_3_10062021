@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// This file contains basic styles.
+// -----------------------------------------------------------------------------
+
+
+// Set up a decent box model on the root element
+body {
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x:hidden;
+  }
+  
+  
+// Make all elements from the DOM inherit from the parent box-sizing
+ 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+//Links 
+a {     
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {                  
+    color: inherit;
+}
+
+//Lists style
+ul {                                
+  list-style: none;
+}
+
+section {
+  padding: 0 20px;
+
+}
+
+//block text
+.block__name, .dish__name {
+  @include block-txt
+}

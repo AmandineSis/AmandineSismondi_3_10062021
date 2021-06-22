@@ -1,0 +1,37 @@
+.intro {
+    padding: 20px;
+    &__heading {
+        padding: 20px 0;
+    }
+}
+
+.select {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70px;
+    background-color: $colour-bgGradient;
+    margin: 25px 0;
+    @include block;
+
+    p {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        color: white;
+        font-weight: bold;
+        background-color: $colour-primary;
+        //center number
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //position
+       position: relative;
+       left: -10px;    
+    }
+
+    i {
+        padding: 20px;
+        color: $colour-icon;
+    }
+}

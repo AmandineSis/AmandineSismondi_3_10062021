@@ -1,0 +1,21 @@
+footer {
+    
+    padding: 20px;
+    background-color: $colour-bgFooter;
+    color: white;
+    .logo {
+        height: 16px;
+    
+    }
+    a {
+        color:white;
+    }
+    ul {
+        line-height: 24px;
+        padding: 0;
+        }
+    .fas {
+        width: 25px;
+    }    
+
+}

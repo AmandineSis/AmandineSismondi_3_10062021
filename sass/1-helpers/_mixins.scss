@@ -1,0 +1,29 @@
+
+//restaurants cards and menu blocks
+@mixin blockLayout {
+    width: 95%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px $colour-shadow ;
+}
+
+
+//button BG
+@mixin gradient{
+    background: rgb(147,86,220);
+    background: linear-gradient(
+        0deg, 
+        rgba(147,86,220,1) 0%, 
+        rgba(255,121,218,1) 100%
+        ); 
+}
+
+@mixin block {
+    border-radius: $borderRadius-block;
+    box-shadow: $box-shadow;
+}
+
+@mixin block-txt {
+    padding-left: 10px;
+    line-height: 1;
+
+}
