@@ -1,4 +1,4 @@
-.bodyFrame {
+body {
   max-width: 1300px;
   box-sizing: border-box;
   margin: 0;
@@ -24,27 +24,21 @@ ul {
   list-style: none;
 }
 
-section {
-  padding: 0 20px;
-}
-
-.name {
-  border-radius: 20px;
-  box-shadow: 2px 2px 20px #c4c7cc;
-  border: blue 2px solid;
+.resto-block__heart {
+  font-size: 20px;
 }
 
 @font-face {
   font-family: Shrikhand;
-  src: url(public/fonts/Shrikhand-Regular.ttf);
+  src: url(fonts/Shrikhand-Regular.ttf);
 }
 @font-face {
   font-family: Roboto;
-  src: url(public/fonts/Roboto-Regular.ttf);
+  src: url(fonts/Roboto-Regular.ttf);
 }
 @font-face {
   font-family: RobotoThin;
-  src: url(public/fonts/Roboto-Thin.ttf);
+  src: url(fonts/Roboto-Thin.ttf);
 }
 .intro__heading, .process__heading, .resto__heading {
   font-family: Roboto;
@@ -65,10 +59,9 @@ p {
 .resto-prev__heading {
   font-family: Shrikhand;
   font-size: 14PX;
-  font-weight: bold;
 }
 
-button {
+.btn {
   font-family: Roboto;
   font-size: 14px;
   color: white;
@@ -108,7 +101,7 @@ footer .fas {
   width: 25px;
 }
 
-.resto-prev img {
+.resto-prev__pic {
   object-fit: cover;
   height: 260px;
 }
@@ -116,14 +109,19 @@ footer .fas {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  position: relative;
+  top: -30px;
+  background: #eaeaea;
+  padding: 10px;
+  border: 2px solid blue;
+  border-radius: 20px 20px 0 0;
 }
 
 .menu {
   text-align: center;
 }
 
-button {
+.btn {
   width: 220px;
   height: 50px;
   margin: 20px 0;
@@ -142,21 +140,21 @@ button {
   justify-content: center;
   align-items: baseline;
 }
-.map .marker {
-  margin-right: 15px;
+.map__marker {
+  padding-right: 15px;
 }
 
 .intro {
-  padding: 20px;
-}
-.intro__heading {
   padding: 45px 20px;
+  text-align: center;
   background: #f6f6f6;
   background: linear-gradient(0deg, #f6f6f6 0%, white 100%);
-  border: 2px solid blue;
 }
 
-.select {
+.process {
+  padding: 50px 20px;
+}
+.process__select {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -166,7 +164,7 @@ button {
   border-radius: 20px;
   box-shadow: 2px 2px 20px #c4c7cc;
 }
-.select p {
+.process__select p {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -179,30 +177,36 @@ button {
   position: relative;
   left: -10px;
 }
-.select i {
+.process__select i {
   padding: 20px;
   color: #7e7e7e;
 }
 
-.restaurants {
+.resto {
   background-color: #eaeaea;
   padding: 30px 20px;
 }
-.restaurants__block {
+
+.resto-block {
   border-radius: 20px;
   box-shadow: 2px 2px 20px #c4c7cc;
   margin: 18px 0;
 }
-.restaurants__block img {
+.resto-block__pic {
   width: 100%;
   height: 175px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-.restaurants__block--heading {
+.resto-block__description {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-right: 10px;
+}
+.resto-block__name {
+  padding-left: 10px;
+  line-height: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,7 @@
 
 
 // Set up a decent box model on the root element
-.bodyFrame {
+body {
     max-width: 1300px;
     box-sizing: border-box;
     margin: 0;
@@ -35,13 +35,6 @@ ul {
   list-style: none;
 }
 
-section {
-  padding: 0 20px;
-
-}
-
-//block text
-.name {
-  @include block;
-  border:blue 2px solid;
+.resto-block__heart {
+  font-size: 20px;
 }

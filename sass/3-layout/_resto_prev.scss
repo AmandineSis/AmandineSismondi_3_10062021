@@ -1,6 +1,7 @@
 .resto-prev {
     
-    img {
+    
+    &__pic {
         object-fit: cover;
         height: 260px;
     }
@@ -8,6 +9,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 30px;
+
+
+        position: relative;
+        top: -30px;
+    
+        background: $colour-bg;
+        padding: 10px;
+        border: 2px solid blue;
+        border-radius: 20px 20px 0 0
     }
 }

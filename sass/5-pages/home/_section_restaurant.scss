@@ -1,21 +1,35 @@
-.restaurants {
+.resto {
     background-color: $colour-bg;
     padding:  30px 20px;
-    &__block {
+}    
+
+.resto-block {
         @include block;
         margin: 18px 0;
-        img {
+
+        &__pic {
             width: 100%;
             height: 175px;
             border-radius: 20px 20px 0 0;
             object-fit: cover;
-        }
-        &--heading {
+            }
+        &__description {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             padding-right: 10px; 
-        }
-    }
-
+        }    
+        &__name {
+            padding-left: 10px;
+            line-height: 0.5;
+        }    
 }
+
+
+
+
+
+    
+
+
 
