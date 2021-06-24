@@ -1,9 +1,9 @@
 .resto-prev {
-    
+    height: 320px;
     
     &__pic {
-        object-fit: cover;
         height: 260px;
+        object-fit: cover;
     }
     &__heading {
         display: flex;

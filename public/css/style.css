@@ -46,12 +46,7 @@ ul {
   margin: 0;
 }
 
-h3 {
-  font-family: Roboto;
-  font-size: 14px;
-}
-
-p {
+h3, p {
   font-family: RobotoThin;
   font-size: 14px;
 }
@@ -67,7 +62,7 @@ p {
   color: white;
 }
 
-ul {
+ul, h4 {
   font-family: Roboto;
   font-size: 14px;
 }
@@ -101,9 +96,12 @@ footer .fas {
   width: 25px;
 }
 
+.resto-prev {
+  height: 320px;
+}
 .resto-prev__pic {
-  object-fit: cover;
   height: 260px;
+  object-fit: cover;
 }
 .resto-prev__heading {
   display: flex;
@@ -118,7 +116,26 @@ footer .fas {
 }
 
 .menu {
-  text-align: center;
+  background-color: #eaeaea;
+  padding: 20px;
+}
+
+.menu-block {
+  border: 2px solid blue;
+}
+.menu-block__list {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px #c4c7cc;
+}
+
+.name {
+  font-size: 16px;
 }
 
 .btn {
