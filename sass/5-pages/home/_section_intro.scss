@@ -1,9 +1,16 @@
 .intro {
     padding: 20px;
     &__heading {
-        padding: 20px 0;
+        padding: 45px 20px;
+        background: $colour-bgGradient;
+        background: linear-gradient(
+            0deg, 
+            rgba(246,246,246,1) 0%, 
+            rgba(255,255,255,1) 100%); 
+        border: 2px solid blue;
+        }
     }
-}
+
 
 .select {
     display: flex;

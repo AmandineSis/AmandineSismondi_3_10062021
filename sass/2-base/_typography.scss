@@ -1,7 +1,9 @@
-.main__heading, .intro__heading, .restaurants__heading {
-    font-family: Roboto;
-    font-size: 20px;
-    margin: 0;
+.intro, .process, .resto{
+    &__heading {
+        font-family: Roboto;
+        font-size: 20px;
+        margin: 0;
+    }
 }
 
 h3 {

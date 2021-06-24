@@ -7,7 +7,7 @@
 }
 
 
-//button BG
+//Gradient for button BG
 @mixin gradient{
     background: rgb(147,86,220);
     background: linear-gradient(
@@ -17,6 +17,7 @@
         ); 
 }
 
+//resto-block and menu-block layout
 @mixin block {
     border-radius: $borderRadius-block;
     box-shadow: $box-shadow;

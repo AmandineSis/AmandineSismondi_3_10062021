@@ -4,7 +4,8 @@
 
 
 // Set up a decent box model on the root element
-body {
+.bodyFrame {
+    max-width: 1300px;
     box-sizing: border-box;
     margin: 0;
     overflow-x:hidden;
@@ -40,6 +41,7 @@ section {
 }
 
 //block text
-.block__name, .dish__name {
-  @include block-txt
+.name {
+  @include block;
+  border:blue 2px solid;
 }
