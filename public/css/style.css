@@ -53,7 +53,7 @@ h3, p {
 
 .resto-prev__heading {
   font-family: Shrikhand;
-  font-size: 14PX;
+  font-size: 12px;
 }
 
 .btn {
@@ -109,14 +109,14 @@ footer .fas {
   align-items: center;
   position: relative;
   top: -30px;
-  background: #eaeaea;
+  background: #f6f6f6;
   padding: 10px;
   border: 2px solid blue;
   border-radius: 20px 20px 0 0;
 }
 
 .menu {
-  background-color: #eaeaea;
+  background-color: #f6f6f6;
   padding: 20px;
 }
 
@@ -125,6 +125,7 @@ footer .fas {
 }
 .menu-block__list {
   height: 70px;
+  margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -147,6 +148,11 @@ footer .fas {
   box-shadow: 2px 2px 20px #c4c7cc;
   background: #9356dc;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  text-align: center;
+}
+
+.btn_frame {
+  text-align: center;
 }
 
 .map {
@@ -200,7 +206,7 @@ footer .fas {
 }
 
 .resto {
-  background-color: #eaeaea;
+  background-color: #f6f6f6;
   padding: 30px 20px;
 }
 

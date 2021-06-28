@@ -6,4 +6,9 @@
     border: none;
     box-shadow: $box-shadow;
     @include gradient;
+    text-align: center;
+}
+
+.btn_frame {
+    text-align: center;
 }
