@@ -40,6 +40,10 @@ ul {
   font-family: RobotoThin;
   src: url(fonts/Roboto-Thin.ttf);
 }
+@font-face {
+  font-family: RobotoBold;
+  src: url(fonts/Roboto-Bold.ttf);
+}
 .intro__heading, .process__heading, .resto__heading {
   font-family: Roboto;
   font-size: 20px;
@@ -47,7 +51,7 @@ ul {
 }
 
 h3, p {
-  font-family: RobotoThin;
+  font-family: Roboto;
   font-size: 14px;
 }
 
@@ -56,7 +60,7 @@ h3, p {
   font-size: 12px;
 }
 
-.btn {
+p .btn {
   font-family: Roboto;
   font-size: 14px;
   color: white;
@@ -65,6 +69,22 @@ h3, p {
 ul, h4 {
   font-family: Roboto;
   font-size: 14px;
+}
+
+.btn {
+  width: 220px;
+  height: 50px;
+  margin: 20px 0;
+  border-radius: 90px;
+  border: none;
+  box-shadow: 2px 2px 20px #c4c7cc;
+  background: #9356dc;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  text-align: center;
+}
+
+.btn_frame {
+  text-align: center;
 }
 
 header {
@@ -111,7 +131,6 @@ footer .fas {
   top: -30px;
   background: #f6f6f6;
   padding: 10px;
-  border: 2px solid blue;
   border-radius: 20px 20px 0 0;
 }
 
@@ -120,9 +139,6 @@ footer .fas {
   padding: 20px;
 }
 
-.menu-block {
-  border: 2px solid blue;
-}
 .menu-block__list {
   height: 70px;
   margin-bottom: 16px;
@@ -136,23 +152,8 @@ footer .fas {
 }
 
 .name {
-  font-size: 16px;
-}
-
-.btn {
-  width: 220px;
-  height: 50px;
-  margin: 20px 0;
-  border-radius: 90px;
-  border: none;
-  box-shadow: 2px 2px 20px #c4c7cc;
-  background: #9356dc;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-  text-align: center;
-}
-
-.btn_frame {
-  text-align: center;
+  padding-left: 10px;
+  line-height: 0.5;
 }
 
 .map {
@@ -227,7 +228,8 @@ footer .fas {
   align-items: center;
   padding-right: 10px;
 }
-.resto-block__name {
+
+.name {
   padding-left: 10px;
   line-height: 0.5;
 }
