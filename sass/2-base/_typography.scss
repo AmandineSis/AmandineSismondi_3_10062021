@@ -1,3 +1,8 @@
+//
+//Basic typography style for copy text
+//
+
+
 .intro, .process, .resto{
     &__heading {
         font-family: Roboto;
@@ -6,17 +11,34 @@
     }
 }
 
-h3, p {
+.map__city, .intro__p {
+    font-family: RobotoThin;
+    font-size: 14px;
+}
+
+.menu-block__heading span{
+    padding-bottom: 5px;
+    border-bottom: 2px solid $colour-tertiary;
+}
+
+h3, h4, ul, span{
     font-family: Roboto;
     font-size: 14px;
 }
+.name p{
+    font-family: RobotoThin;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: -12px;
+}
+
 
 .resto-prev__heading {
     font-family: Shrikhand;
     font-size: 12px;
 }
-
-p
 
 .btn {
     font-family: Roboto;
@@ -24,8 +46,5 @@ p
     color: white;
 }
 
-ul, h4 {
-    font-family: Roboto;
-    font-size: 14px;
-}
+
 

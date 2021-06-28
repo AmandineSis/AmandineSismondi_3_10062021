@@ -28,6 +28,12 @@ ul {
   font-size: 20px;
 }
 
+.name {
+  width: 80%;
+  padding-left: 10px;
+  line-height: 1;
+}
+
 @font-face {
   font-family: Shrikhand;
   src: url(fonts/Shrikhand-Regular.ttf);
@@ -50,9 +56,28 @@ ul {
   margin: 0;
 }
 
-h3, p {
+.map__city, .intro__p {
+  font-family: RobotoThin;
+  font-size: 14px;
+}
+
+.menu-block__heading span {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #99E2D0;
+}
+
+h3, h4, ul, span {
   font-family: Roboto;
   font-size: 14px;
+}
+
+.name p {
+  font-family: RobotoThin;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: -12px;
 }
 
 .resto-prev__heading {
@@ -60,15 +85,14 @@ h3, p {
   font-size: 12px;
 }
 
-p .btn {
+.btn {
   font-family: Roboto;
   font-size: 14px;
   color: white;
 }
 
-ul, h4 {
-  font-family: Roboto;
-  font-size: 14px;
+.btn_frame {
+  text-align: center;
 }
 
 .btn {
@@ -80,10 +104,6 @@ ul, h4 {
   box-shadow: 2px 2px 20px #c4c7cc;
   background: #9356dc;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-  text-align: center;
-}
-
-.btn_frame {
   text-align: center;
 }
 
@@ -149,11 +169,6 @@ footer .fas {
   background: white;
   border-radius: 20px;
   box-shadow: 2px 2px 20px #c4c7cc;
-}
-
-.name {
-  padding-left: 10px;
-  line-height: 0.5;
 }
 
 .map {
@@ -227,11 +242,6 @@ footer .fas {
   justify-content: space-between;
   align-items: center;
   padding-right: 10px;
-}
-
-.name {
-  padding-left: 10px;
-  line-height: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */
