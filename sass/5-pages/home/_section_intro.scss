@@ -40,6 +40,15 @@
         i {
             padding: 20px;
             color: $colour-icon;
+
+        }
+
+        &:hover {
+            background-color: lighten($colour-primary, 30%);
+            i {
+                color: $colour-primary;
+            }
+
         }
     }
 }

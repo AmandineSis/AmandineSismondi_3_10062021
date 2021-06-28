@@ -220,6 +220,12 @@ footer .fas {
   padding: 20px;
   color: #7e7e7e;
 }
+.process__select:hover {
+  background-color: #e4d5f6;
+}
+.process__select:hover i {
+  color: #9356DC;
+}
 
 .resto {
   background-color: #f6f6f6;
