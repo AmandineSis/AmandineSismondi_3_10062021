@@ -169,39 +169,48 @@ footer .fas {
   padding: 20px;
 }
 
-.dish__price {
-  width: 20%;
-  height: 100%;
-  overflow-x: hidden;
-  text-align: right;
-}
-.dish__price span {
-  align-items: center;
-  padding: 20px;
-  border: blue 2px solid;
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-.dish__price i {
-  visibility: hidden;
-}
-
 .menu-block__list {
   height: 70px;
   margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
   background: white;
   border-radius: 20px;
   box-shadow: 2px 2px 20px #c4c7cc;
+  overflow: hidden;
+  position: relative;
 }
-.menu-block__list:hover > .dish__price {
-  background-color: blueviolet;
+.menu-block__list .dish__price {
+  margin-right: 10px;
+  transition: transform 1s;
 }
-.menu-block__list:hover > .dish__price span {
-  transform: translateX(-50px, 0);
+.menu-block__list .dish__select {
+  width: 70px;
+  height: 70px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
+  border-radius: 0 20px 20px 0;
+  background-color: #99E2D0;
+  position: absolute;
+  right: -70px;
+}
+.menu-block__list .dish__select .fas {
+  color: white;
+  transition: transform 1s;
+}
+.menu-block__list:active .dish__select {
+  transform: translate(-70px, 0);
+  animation-fill-mode: forwards;
+}
+.menu-block__list:active .dish__select .fas {
+  transform: rotate(1turn);
+}
+.menu-block__list:active .dish__price {
+  transform: translate(-70px, 0);
 }
 
 .map {

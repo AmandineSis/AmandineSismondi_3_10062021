@@ -3,45 +3,77 @@
    padding: 20px;
 } 
 
-.dish__price {
-   width: 20%;
-   height: 100%;
-   overflow-x: hidden;
-   text-align: right;
-   span {
-      align-items: center;
-      padding: 20px;
-      border: blue 2px solid;
-      animation-duration: 3s;
-      animation-name: slidein;
-   }
-   i {
-      visibility: hidden;
-   }
-}
-
 
 
 .menu-block {
    &__list {
-       height: 70px;
-       margin-bottom: 16px;
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       padding: 10px;
-       background: white;
-       @include block;
-       &:hover > .dish__price{
-          span{
-             transform: translateX(-50px,0);
-          }
-         background-color: blueviolet;
+      height: 70px;
+    margin-bottom: 16px;
 
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+      background: white;
+
+
+      @include block;
+
+
+      overflow: hidden;
+      position: relative;
+
+      .dish__price {
+         margin-right: 10px;
+         transition: transform 1s
       }
+
+
+      .dish__select {
+         width: 70px;
+         height: 70px;
+         font-size: 25px;
+        
+         display: flex;           
+         align-items: center;
+         justify-content: center;
+         
+         transition: transform 1s;
+         
+         
+         border-radius: 0 20px 20px 0;
+
+         background-color: $colour-tertiary;
+         position: absolute;
+         right: -70px;
+        
+         .fas {
+         color: white;
+
+        
+         transition: transform 1s;
+         }
+         
+      }
+
+      &:active {
+         .dish__select  {
+            transform: translate(-70px, 0) ;
+            animation-fill-mode: forwards;
+            .fas {
+               transform: rotate(1turn);
+              
+            }
+         }
+         
+         .dish__price {
+            transform: translate(-70px,0);
+         }
+      }
+
    }
-   
-   
 }
-
-
+   
+   
