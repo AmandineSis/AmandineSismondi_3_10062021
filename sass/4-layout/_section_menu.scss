@@ -3,6 +3,25 @@
    padding: 20px;
 } 
 
+.dish__price {
+   width: 20%;
+   height: 100%;
+   overflow-x: hidden;
+   text-align: right;
+   span {
+      align-items: center;
+      padding: 20px;
+      border: blue 2px solid;
+      animation-duration: 3s;
+      animation-name: slidein;
+   }
+   i {
+      visibility: hidden;
+   }
+}
+
+
+
 .menu-block {
    &__list {
        height: 70px;
@@ -13,7 +32,15 @@
        padding: 10px;
        background: white;
        @include block;
+       &:hover > .dish__price{
+          span{
+             transform: translateX(-50px,0);
+          }
+         background-color: blueviolet;
+
+      }
    }
+   
    
 }
 
