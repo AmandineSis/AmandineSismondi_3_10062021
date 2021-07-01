@@ -1,13 +1,3 @@
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
 body {
   max-width: 1300px;
   box-sizing: border-box;
@@ -101,6 +91,31 @@ h3, h4, ul, span {
   color: white;
 }
 
+.menu-block__name {
+  transition: transform 1s;
+}
+.menu-block__list {
+  overflow: hidden;
+  position: relative;
+}
+.menu-block__list .dish__price .dish__select .fas {
+  transition: transform 1s;
+}
+.menu-block:active .dish__select {
+  transform: translate(-70px, 0);
+}
+.menu-block:active .dish__select .fas {
+  transform: rotate(1turn);
+}
+.menu-block:active .menu-block__name {
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: slidein 1s;
+}
+.menu-block:active .dish__price {
+  transform: translate(-70px, 0);
+}
+
 .btn_frame {
   text-align: center;
 }
@@ -178,12 +193,9 @@ footer .fas {
   background: white;
   border-radius: 20px;
   box-shadow: 2px 2px 20px #c4c7cc;
-  overflow: hidden;
-  position: relative;
 }
 .menu-block__list .dish__price {
   margin-right: 10px;
-  transition: transform 1s;
 }
 .menu-block__list .dish__select {
   width: 70px;
@@ -192,25 +204,13 @@ footer .fas {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 1s;
   border-radius: 0 20px 20px 0;
   background-color: #99E2D0;
   position: absolute;
   right: -70px;
 }
-.menu-block__list .dish__select .fas {
+.menu-block__list .fas {
   color: white;
-  transition: transform 1s;
-}
-.menu-block__list:active .dish__select {
-  transform: translate(-70px, 0);
-  animation-fill-mode: forwards;
-}
-.menu-block__list:active .dish__select .fas {
-  transform: rotate(1turn);
-}
-.menu-block__list:active .dish__price {
-  transform: translate(-70px, 0);
 }
 
 .map {
