@@ -79,6 +79,11 @@ h3, h4, ul, span {
   text-overflow: ellipsis;
   margin-top: -12px;
 }
+.name h4 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
 .resto-prev__heading {
   font-family: Shrikhand;
@@ -91,37 +96,33 @@ h3, h4, ul, span {
   color: white;
 }
 
-.menu-block__name {
-  transition: transform 1s;
+@keyframes slide-left {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-70px);
+  }
 }
-.menu-block__list {
-  overflow: hidden;
-  position: relative;
+.menu-block__list .menu-block__name {
+  transition: width 1s;
 }
-.menu-block__list .dish__price {
-  transition: transform 1s;
-}
-.menu-block__list .dish__select {
-  transition: transform 1s;
-}
+.menu-block__list .dish__price,
+.menu-block__list .dish__select,
 .menu-block__list .fas {
-  transition: transform 1s;
+  transition: 1s;
 }
-.menu-block:active {
-  /* .menu-block__name {
-      transform-origin: left;
-      transform: scaleX(0);
-      animation: slidein 1s;
-   }*/
+.menu-block__list:active .menu-block__name {
+  width: 50%;
 }
-.menu-block:active .dish__select {
-  transform: translate(-70px, 0);
+.menu-block__list:active .dish__select {
+  animation: slide-left 1s;
 }
-.menu-block:active .dish__select .fas {
+.menu-block__list:active .dish__select .fas {
   transform: rotate(1turn);
 }
-.menu-block:active .dish__price {
-  transform: translate(-70px, 0);
+.menu-block__list:active .dish__price {
+  animation: slide-left 1s;
 }
 
 .btn_frame {
@@ -187,6 +188,24 @@ footer .fas {
   border-radius: 20px 20px 0 0;
 }
 
+.resto-block__heart {
+  position: relative;
+}
+.resto-block__heart--empty {
+  position: absolute;
+  right: 0px;
+  top: -10px;
+}
+.resto-block__heart--full {
+  position: absolute;
+  right: 0px;
+  top: -10px;
+  z-index: 1;
+  opacity: 0;
+  color: #9356dc;
+  color: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+}
+
 .menu {
   background-color: #f6f6f6;
   padding: 20px;
@@ -199,6 +218,8 @@ footer .fas {
   justify-content: space-between;
   align-items: center;
   background: white;
+  overflow: hidden;
+  position: relative;
   border-radius: 20px;
   box-shadow: 2px 2px 20px #c4c7cc;
 }

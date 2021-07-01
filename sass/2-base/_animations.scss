@@ -1,42 +1,38 @@
 
 
 .menu-block {
-    &__name {
-       transition: transform 1s
-    }
-    &__list {    
-       overflow: hidden;
-       position: relative;
-       .dish__price {
-          transition: transform 1s
+    
+   &__list {    
+      .menu-block__name {
+         transition: width 1s;
+      }
+      .dish__price,
+      .dish__select,
+      .fas {
+         transition: 1s;
+         
         } 
-       .dish__select {
-          transition: transform 1s;
-        }
-        .fas {
-          transition: transform 1s;
-        }
-    }
+    
  
-       &:active {
-          
-          .dish__select  {
-             transform: translate(-70px, 0) ;
-            // animation-fill-mode: forwards;
+   &:active {
+
+         .menu-block__name {
+            
+            width: 50%;
+         } 
+         .dish__select  {
+            animation: slide-left 1s;
+                       
              .fas {
                 transform: rotate(1turn);
-               
-             }
+               }
           }
-         /* .menu-block__name {
-             transform-origin: left;
-             transform: scaleX(0);
-             animation: slidein 1s;
-          }*/
-          .dish__price {
-             transform: translate(-70px,0);
-          }
-       }
- 
-    }
+  
+         .dish__price {
+            animation: slide-left 1s;
+         }
+      }          
+   }
+}
+
  

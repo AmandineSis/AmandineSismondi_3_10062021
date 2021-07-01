@@ -24,14 +24,23 @@
 h3, h4, ul, span{
     font-family: Roboto;
     font-size: 14px;
+    
+
 }
-.name p{
+.name {
+    p{
     font-family: RobotoThin;
     font-size: 14px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     margin-top: -12px;
+    }
+    h4 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    }
 }
 
 
