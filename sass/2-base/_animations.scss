@@ -35,4 +35,16 @@
    }
 }
 
- 
+ .resto-block__heart {
+    &--full {
+      transition: opacity 1s;
+      opacity: 0;
+      z-index: 1;
+    }
+    &--empty {
+      opacity: 1;
+    }
+    &:hover &--full {
+       opacity: 1;
+    }
+ }

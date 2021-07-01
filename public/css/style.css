@@ -34,6 +34,10 @@ ul {
   line-height: 1;
 }
 
+*:hover {
+  cursor: pointer;
+}
+
 @font-face {
   font-family: Shrikhand;
   src: url(fonts/Shrikhand-Regular.ttf);
@@ -125,6 +129,18 @@ h3, h4, ul, span {
   animation: slide-left 1s;
 }
 
+.resto-block__heart--full {
+  transition: opacity 1s;
+  opacity: 0;
+  z-index: 1;
+}
+.resto-block__heart--empty {
+  opacity: 1;
+}
+.resto-block__heart:hover .resto-block__heart--full {
+  opacity: 1;
+}
+
 .btn_frame {
   text-align: center;
 }
@@ -200,10 +216,10 @@ footer .fas {
   position: absolute;
   right: 0px;
   top: -10px;
-  z-index: 1;
-  opacity: 0;
-  color: #9356dc;
-  color: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  color: blueviolet;
+  /*background: -webkit-gradient(linear, left bottom, left top, from(rgba(255,121,218,1)), to(rgba(147,86,220,1)));
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;*/
 }
 
 .menu {

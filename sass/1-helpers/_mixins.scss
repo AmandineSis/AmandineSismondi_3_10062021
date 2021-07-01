@@ -17,14 +17,7 @@
         ); 
 }
 
-@mixin gradient-heart{
-    color: rgb(147,86,220);
-    color: linear-gradient(
-        0deg, 
-        rgba(147,86,220,1) 0%, 
-        rgba(255,121,218,1) 100%
-        ); 
-}
+
 
 //resto-block and menu-block layout
 @mixin block {
