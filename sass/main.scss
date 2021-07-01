@@ -3,8 +3,8 @@
 // 1. Configuration and helpers
 @import
   '1-helpers/variables',
-  '1-helpers/mixins',
-  '1-helpers/keyframes';
+  '1-helpers/mixins';
+  ;
   
 
 
@@ -13,6 +13,7 @@
   '2-base/base',
   '2-base/font',
   '2-base/typography',
+  '2-base/keyframes',
   '2-base/animations';
 
   

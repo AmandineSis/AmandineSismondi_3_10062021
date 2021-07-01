@@ -7,9 +7,15 @@
     &__list {    
        overflow: hidden;
        position: relative;
-       .dish__price .dish__select .fas{
+       .dish__price {
           transition: transform 1s
         } 
+       .dish__select {
+          transition: transform 1s;
+        }
+        .fas {
+          transition: transform 1s;
+        }
     }
  
        &:active {
@@ -22,11 +28,11 @@
                
              }
           }
-          .menu-block__name {
+         /* .menu-block__name {
              transform-origin: left;
              transform: scaleX(0);
              animation: slidein 1s;
-          }
+          }*/
           .dish__price {
              transform: translate(-70px,0);
           }

@@ -98,19 +98,27 @@ h3, h4, ul, span {
   overflow: hidden;
   position: relative;
 }
-.menu-block__list .dish__price .dish__select .fas {
+.menu-block__list .dish__price {
   transition: transform 1s;
+}
+.menu-block__list .dish__select {
+  transition: transform 1s;
+}
+.menu-block__list .fas {
+  transition: transform 1s;
+}
+.menu-block:active {
+  /* .menu-block__name {
+      transform-origin: left;
+      transform: scaleX(0);
+      animation: slidein 1s;
+   }*/
 }
 .menu-block:active .dish__select {
   transform: translate(-70px, 0);
 }
 .menu-block:active .dish__select .fas {
   transform: rotate(1turn);
-}
-.menu-block:active .menu-block__name {
-  transform-origin: left;
-  transform: scaleX(0);
-  animation: slidein 1s;
 }
 .menu-block:active .dish__price {
   transform: translate(-70px, 0);
