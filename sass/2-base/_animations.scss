@@ -10,30 +10,25 @@
       .dish__select,
       .fas {
          transition: 1s;
-         
-        } 
-    
- 
-   &:active {
-
+        }  
+   &:hover {
          .menu-block__name {
-            
             width: 50%;
+            animation-fill-mode: forwards;
          } 
-         .dish__select  {
+         .dish__select, .dish__price  {
             animation: slide-left 1s;
+            animation-fill-mode: forwards;
                        
              .fas {
                 transform: rotate(1turn);
+                animation-fill-mode: forwards;
                }
-          }
-  
-         .dish__price {
-            animation: slide-left 1s;
          }
-      }          
-   }
+      }
+   }          
 }
+
 
  .resto-block__heart {
     &--full {

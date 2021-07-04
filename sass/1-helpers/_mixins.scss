@@ -17,6 +17,15 @@
         ); 
 }
 
+@mixin gradient-lighter  {
+    background: lighten(rgb(147,86,220), 2) ;
+    background: linear-gradient(
+        0deg, 
+        lighten(rgb(147,86,220), 5) 0%, 
+        lighten(rgba(255,121,218,1), 5) 100%
+        ); 
+}
+
 
 
 //resto-block and menu-block layout
