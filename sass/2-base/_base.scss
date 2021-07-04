@@ -48,3 +48,20 @@ ul {
 *:hover {
   cursor: pointer;
 }
+
+.resto-block__heart {
+  position: relative;
+  &--empty {
+      position: absolute;
+      right: 0px;
+      top: -10px;
+  
+  }
+  &--full {
+      position: absolute;
+      right: 0px;
+      top: -10px;   
+      z-index: 1;
+      @include gradient-heart;
+  }
+}

@@ -38,6 +38,24 @@ ul {
   cursor: pointer;
 }
 
+.resto-block__heart {
+  position: relative;
+}
+.resto-block__heart--empty {
+  position: absolute;
+  right: 0px;
+  top: -10px;
+}
+.resto-block__heart--full {
+  position: absolute;
+  right: 0px;
+  top: -10px;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @font-face {
   font-family: Shrikhand;
   src: url(fonts/Shrikhand-Regular.ttf);
@@ -108,6 +126,49 @@ h3, h4, ul, span {
     transform: translateX(-70px);
   }
 }
+@keyframes appearence {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes heart-filling {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes heart-filling-reverse {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.menu-block__list {
+  animation: appearence 1s;
+  animation-fill-mode: forwards;
+}
+.menu-block__list:nth-child(3) {
+  animation: appearence 1.6s;
+  animation-fill-mode: forwards;
+}
+.menu-block__list:nth-child(4) {
+  animation: appearence 2.2s;
+  animation-fill-mode: forwards;
+}
+.menu-block__list:nth-child(5) {
+  animation: appearence 2.8s;
+  animation-fill-mode: forwards;
+}
+
 .menu-block__list .menu-block__name {
   transition: width 1s;
 }
@@ -135,10 +196,14 @@ h3, h4, ul, span {
   z-index: 1;
 }
 .resto-block__heart--empty {
+  transition: opacity 1s;
   opacity: 1;
 }
 .resto-block__heart:hover .resto-block__heart--full {
   opacity: 1;
+}
+.resto-block__heart:hover .resto-block__heart--empty {
+  opacity: 0;
 }
 
 .btn_frame {
@@ -221,24 +286,6 @@ footer .fas {
   background: #f6f6f6;
   padding: 10px;
   border-radius: 20px 20px 0 0;
-}
-
-.resto-block__heart {
-  position: relative;
-}
-.resto-block__heart--empty {
-  position: absolute;
-  right: 0px;
-  top: -10px;
-}
-.resto-block__heart--full {
-  position: absolute;
-  right: 0px;
-  top: -10px;
-  color: blueviolet;
-  /*background: -webkit-gradient(linear, left bottom, left top, from(rgba(255,121,218,1)), to(rgba(147,86,220,1)));
-           -webkit-background-clip: text;
-           -webkit-text-fill-color: transparent;*/
 }
 
 .menu {

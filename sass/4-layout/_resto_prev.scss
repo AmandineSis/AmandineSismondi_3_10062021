@@ -20,22 +20,3 @@
     }
 }
 
-.resto-block__heart {
-    position: relative;
-    &--empty {
-        position: absolute;
-        right: 0px;
-        top: -10px;
-    
-    }
-    &--full {
-        position: absolute;
-        right: 0px;
-        top: -10px;   
-        color: blueviolet;
-        
-        /*background: -webkit-gradient(linear, left bottom, left top, from(rgba(255,121,218,1)), to(rgba(147,86,220,1)));
-	                -webkit-background-clip: text;
-	                -webkit-text-fill-color: transparent;*/
-    }
-}
