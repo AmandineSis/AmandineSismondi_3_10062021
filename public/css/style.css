@@ -136,22 +136,6 @@ h3, h4, ul, span {
     opacity: 1;
   }
 }
-@keyframes heart-filling {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes heart-filling-reverse {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 .menu-block__list {
   animation: appearence 1s;
   animation-fill-mode: forwards;
@@ -401,6 +385,19 @@ footer .fas {
   justify-content: space-between;
   align-items: center;
   padding-right: 10px;
+}
+
+.resto-block__new {
+  position: relative;
+}
+.resto-block__new p {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  padding: 3px 10px;
+  font-family: RobotoBold;
+  color: #278870;
+  background-color: #71d7be;
 }
 
 /*# sourceMappingURL=style.css.map */

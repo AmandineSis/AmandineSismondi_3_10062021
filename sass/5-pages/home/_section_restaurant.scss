@@ -22,7 +22,19 @@
     }
 
 
-
+.resto-block__new {
+    position: relative;
+  
+    p {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        padding: 3px 10px;
+        font-family: RobotoBold;
+        color: darken($colour-tertiary, 40);
+        background-color: darken($colour-tertiary, 10);
+    }
+}
 
 
 
