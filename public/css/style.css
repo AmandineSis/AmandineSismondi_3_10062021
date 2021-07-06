@@ -172,7 +172,7 @@ h3, h4, ul, span {
     opacity: 0;
   }
   to {
-    transform: translateX(10px);
+    transform: translateX(0px);
     opacity: 1;
   }
 }
@@ -320,25 +320,29 @@ h3, h4, ul, span {
 .loader__square-top {
   opacity: 0;
   background-color: #9356DC;
-  animation: appearence-top 2s;
+  animation: appearence-top 2s forwards;
+  z-index: 1010;
 }
 .loader__square-right {
   opacity: 0;
   background-color: #FF79DA;
-  animation: appearence-right 2s 1s;
+  animation: appearence-right 2s 1s forwards;
   overflow: hidden;
+  z-index: 1009;
 }
 .loader__square-bottom {
   opacity: 0;
   background-color: #ffe278;
-  animation: appearence-bottom 2s 2s;
+  animation: appearence-bottom 2s 2s forwards;
   overflow: hidden;
+  z-index: 1008;
 }
 .loader__square-left {
   opacity: 0;
   background-color: #99E2D0;
-  animation: appearence-left 2s 3s;
+  animation: appearence-left 2s 3s forwards;
   overflow: hidden;
+  z-index: 1007;
 }
 
 header {

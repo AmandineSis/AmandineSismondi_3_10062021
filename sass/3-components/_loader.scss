@@ -42,25 +42,30 @@
         &-top {
             opacity:0;
             background-color: $colour-primary;
-            animation: appearence-top 2s;  
+            animation: appearence-top 2s forwards;  
+            z-index: 1010;
         }
         &-right {
             opacity:0;
             background-color: $colour-secondary;
-            animation: appearence-right 2s 1s;
+            animation: appearence-right 2s 1s forwards;
             overflow: hidden;
+            z-index: 1009;
         }
         &-bottom {
             opacity:0;
             background-color: #ffe278;
-            animation: appearence-bottom 2s 2s;
+            animation: appearence-bottom 2s 2s forwards;
             overflow: hidden;
+            z-index: 1008;
         }
         &-left {
             opacity:0;
             background-color: $colour-tertiary;
-            animation: appearence-left 2s 3s;
+            animation: appearence-left 2s 3s forwards;
             overflow: hidden;
+            z-index: 1007;
+
         }
         
     }
