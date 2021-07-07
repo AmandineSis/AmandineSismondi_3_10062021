@@ -8,6 +8,7 @@ $colour-bg: rgb(246,246,246);
 $colour-bgGradient: rgb(246,246,246);
 $colour-bgFooter: #353535;
 
+
 $colour-shadow: #c4c7cc; 
 
 $colour-icon: #7e7e7e;
@@ -18,3 +19,6 @@ $borderRadius-block: 20px;
 
 //box-shadow list
 $box-shadow :2px 2px 20px $colour-shadow;
+
+$box-shadow-darken : 2px 2px 10px darken($colour-shadow, 15);
+

@@ -34,6 +34,28 @@ ul {
   line-height: 1;
 }
 
+*:hover {
+  cursor: pointer;
+}
+
+.resto-block__heart {
+  position: relative;
+}
+.resto-block__heart--empty {
+  position: absolute;
+  right: 0px;
+  top: -10px;
+}
+.resto-block__heart--full {
+  position: absolute;
+  right: 0px;
+  top: -10px;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @font-face {
   font-family: Shrikhand;
   src: url(fonts/Shrikhand-Regular.ttf);
@@ -79,6 +101,11 @@ h3, h4, ul, span {
   text-overflow: ellipsis;
   margin-top: -12px;
 }
+.name h4 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
 .resto-prev__heading {
   font-family: Shrikhand;
@@ -91,6 +118,128 @@ h3, h4, ul, span {
   color: white;
 }
 
+@keyframes slide-left {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-70px);
+  }
+}
+@keyframes appearence {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes appearence-top {
+  from {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes appearence-right {
+  from {
+    transform: translateX(-25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes appearence-bottom {
+  from {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes appearence-left {
+  from {
+    transform: translateX(25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes loading-transition {
+  from {
+    opacity: 1;
+    z-index: 1000;
+  }
+  to {
+    opacity: 0;
+    z-index: -1000;
+  }
+}
+.menu-block__list {
+  animation: appearence 1s;
+  animation-fill-mode: forwards;
+}
+.menu-block__list:nth-child(3) {
+  animation: appearence 1.6s;
+  animation-fill-mode: forwards;
+}
+.menu-block__list:nth-child(4) {
+  animation: appearence 2.2s;
+  animation-fill-mode: forwards;
+}
+.menu-block__list:nth-child(5) {
+  animation: appearence 2.8s;
+  animation-fill-mode: forwards;
+}
+
+.menu-block__list .menu-block__name {
+  transition: width 1s;
+}
+.menu-block__list .dish__price,
+.menu-block__list .dish__select,
+.menu-block__list .fas {
+  transition: 1s;
+}
+.menu-block__list:hover .menu-block__name {
+  width: 50%;
+  animation-fill-mode: forwards;
+}
+.menu-block__list:hover .dish__select, .menu-block__list:hover .dish__price {
+  animation: slide-left 1s;
+  animation-fill-mode: forwards;
+}
+.menu-block__list:hover .dish__select .fas, .menu-block__list:hover .dish__price .fas {
+  transform: rotate(1turn);
+  animation-fill-mode: forwards;
+}
+
+.resto-block__heart--full {
+  transition: opacity 2s;
+  opacity: 0;
+  z-index: 1;
+}
+.resto-block__heart--empty {
+  transition: opacity 2s;
+  opacity: 1;
+}
+.resto-block__heart:hover .resto-block__heart--full {
+  opacity: 1;
+}
+.resto-block__heart:hover .resto-block__heart--empty {
+  opacity: 0;
+}
+
 .btn_frame {
   text-align: center;
 }
@@ -101,10 +250,104 @@ h3, h4, ul, span {
   margin: 20px 0;
   border-radius: 90px;
   border: none;
+  position: relative;
   box-shadow: 2px 2px 20px #c4c7cc;
   background: #9356dc;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   text-align: center;
+  z-index: 1;
+}
+.btn:hover::after {
+  opacity: 1;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  border-radius: 90px;
+  box-shadow: 2px 2px 10px #9ba0a9;
+  z-index: -1;
+  background: #985ede;
+  background: linear-gradient(0deg, #a16be0 0%, #ff93e1 100%);
+}
+
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes ssquare-slide {
+  from {
+    transform: translateX(-25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.loader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 1000;
+  background-color: white;
+  animation: loading-transition 3s 5s forwards;
+}
+.loader_frame {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  transform: rotate(45deg);
+  z-index: 1001;
+  top: 45vh;
+  left: 45vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.loader__square {
+  width: 25px;
+  height: 25px;
+}
+.loader__square-top {
+  opacity: 0;
+  background-color: #9356DC;
+  animation: appearence-top 2s forwards;
+  object-fit: contain;
+  z-index: 1010;
+}
+.loader__square-right {
+  opacity: 0;
+  background-color: #FF79DA;
+  animation: appearence-right 2s 1s forwards;
+  overflow: hidden;
+  z-index: 1009;
+}
+.loader__square-bottom {
+  opacity: 0;
+  background-color: #ffe278;
+  animation: appearence-bottom 2s 2s forwards;
+  overflow: hidden;
+  z-index: 1008;
+}
+.loader__square-left {
+  opacity: 0;
+  background-color: #99E2D0;
+  animation: appearence-left 2s 3s forwards;
+  overflow: hidden;
+  z-index: 1007;
 }
 
 header {
@@ -165,16 +408,35 @@ footer .fas {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
   background: white;
+  overflow: hidden;
+  position: relative;
   border-radius: 20px;
   box-shadow: 2px 2px 20px #c4c7cc;
+}
+.menu-block__list .dish__price {
+  margin-right: 10px;
+}
+.menu-block__list .dish__select {
+  width: 70px;
+  height: 70px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 20px 20px 0;
+  background-color: #99E2D0;
+  position: absolute;
+  right: -70px;
+}
+.menu-block__list .fas {
+  color: white;
 }
 
 .map {
   text-align: center;
   background-color: #eaeaea;
-  box-shadow: inset 0 5px 10px 0 #c4c7cc;
+  box-shadow: inset 0 5px 10px #c4c7cc;
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -248,6 +510,19 @@ footer .fas {
   justify-content: space-between;
   align-items: center;
   padding-right: 10px;
+}
+
+.resto-block__new {
+  position: relative;
+}
+.resto-block__new p {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  padding: 3px 10px;
+  font-family: RobotoBold;
+  color: #278870;
+  background-color: #71d7be;
 }
 
 /*# sourceMappingURL=style.css.map */

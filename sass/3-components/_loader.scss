@@ -1,0 +1,76 @@
+@keyframes load {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes ssquare-slide {
+    from { transform: translateX(-25px);
+         opacity: 0;
+    }
+    to { transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.loader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 1000;
+    background-color: white;
+    animation: loading-transition 3s 5s forwards;
+    &_frame {
+        position: absolute;
+        width: 55px;
+        height: 55px;
+        transform: rotate(45deg);
+        z-index: 1001;
+        top: 45vh;
+        left: 45vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        
+    }
+    &__square {
+        width: 25px;
+        height: 25px;
+        
+
+        &-top {
+            opacity:0;
+            background-color: $colour-primary;
+            animation: appearence-top 2s forwards; 
+            object-fit: contain; 
+            z-index: 1010;
+        }
+        &-right {
+            opacity:0;
+            background-color: $colour-secondary;
+            animation: appearence-right 2s 1s forwards;
+            overflow: hidden;
+            z-index: 1009;
+        }
+        &-bottom {
+            opacity:0;
+            background-color: #ffe278;
+            animation: appearence-bottom 2s 2s forwards;
+            overflow: hidden;
+            z-index: 1008;
+        }
+        &-left {
+            opacity:0;
+            background-color: $colour-tertiary;
+            animation: appearence-left 2s 3s forwards;
+            overflow: hidden;
+            z-index: 1007;
+
+        }
+        
+    }
+}
+

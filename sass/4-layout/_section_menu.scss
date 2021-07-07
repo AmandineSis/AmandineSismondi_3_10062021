@@ -3,18 +3,42 @@
    padding: 20px;
 } 
 
+
+
 .menu-block {
+  
    &__list {
-       height: 70px;
-       margin-bottom: 16px;
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       padding: 10px;
-       background: white;
-       @include block;
+      height: 70px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      overflow: hidden;
+      position: relative;
+      @include block;
+
+      .dish__price {
+         margin-right: 10px;
+      }
+      .dish__select {
+         width: 70px;
+         height: 70px;
+         font-size: 25px;
+        
+         display: flex;           
+         align-items: center;
+         justify-content: center;   
+         border-radius: 0 20px 20px 0;
+
+         background-color: $colour-tertiary;
+         position: absolute;
+         right: -70px;
+      }
+      .fas {
+         color: white;
+      }
+         
    }
-   
+
 }
-
-

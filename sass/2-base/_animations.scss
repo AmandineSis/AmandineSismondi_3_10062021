@@ -1,0 +1,72 @@
+.menu-block {
+   
+   &__list {    
+     animation: appearence 1s;
+      animation-fill-mode: forwards;
+    
+      &:nth-child(3){
+      animation: appearence 1.6s ;
+      animation-fill-mode: forwards;
+    //  border: blue solid 2px;
+      }
+      &:nth-child(4){
+         animation: appearence 2.2s ;
+      animation-fill-mode: forwards;
+     // border: blue solid 2px;
+      }
+      &:nth-child(5){
+         animation: appearence 2.8s ;
+      animation-fill-mode: forwards;
+    //  border: blue solid 2px;
+      }
+   }   
+}
+
+.menu-block {
+    
+   &__list {          
+      .menu-block__name {
+         transition: width 1s;
+      }
+      .dish__price,
+      .dish__select,
+      .fas {
+         transition: 1s;
+        }  
+   &:hover {
+         .menu-block__name {
+            width: 50%;
+            animation-fill-mode: forwards;
+         } 
+         .dish__select, .dish__price  {
+            animation: slide-left 1s;
+            animation-fill-mode: forwards;
+                       
+             .fas {
+                transform: rotate(1turn);
+                animation-fill-mode: forwards;
+               }
+         }
+      }
+   }          
+}
+
+
+.resto-block__heart {
+   &--full {
+     transition: opacity 2s;
+     opacity: 0;
+     z-index: 1;
+   }
+   &--empty {
+     transition: opacity 2s; 
+     opacity: 1;
+   }
+   &:hover &--full {
+      opacity: 1;
+   }
+   &:hover &--empty {
+      opacity: 0;
+   }
+}
+ 

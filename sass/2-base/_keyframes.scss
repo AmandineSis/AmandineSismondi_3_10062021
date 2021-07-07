@@ -1,0 +1,59 @@
+@keyframes slide-left {
+    from{transform: translateX(0px)}
+    to{transform: translateX(-70px)}
+   
+}
+
+
+@keyframes appearence {
+    from { transform: translateY(10px); 
+           opacity: 0;
+        }
+    to { transform: translateY(0px);
+         opacity: 1 ;
+        }
+}
+
+@keyframes appearence-top {
+    from { transform: translateY(25px); 
+           opacity: 0;
+        }
+    to { transform: translateY(0px);
+         opacity: 1 ;
+        }
+}
+
+@keyframes appearence-right {
+    from { transform: translateX(-25px); 
+           opacity: 0;
+        }
+    to { transform: translateX(0px);
+         opacity: 1 ;
+        }
+}
+
+@keyframes appearence-bottom {
+    from { transform: translateY(-25px); 
+           opacity: 0;
+        }
+    to { transform: translateY(0px);
+         opacity: 1 ;
+        }
+}
+
+@keyframes appearence-left {
+    from { transform: translateX(25px); 
+           opacity: 0;
+        }
+    to { transform: translateX(0px);
+         opacity: 1 ;
+        }
+}
+
+@keyframes loading-transition {
+    from {opacity:1;
+          z-index: 1000;  }
+    to {opacity:0;
+        z-index: -1000;}
+}
+
