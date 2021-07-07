@@ -179,9 +179,11 @@ h3, h4, ul, span {
 @keyframes loading-transition {
   from {
     opacity: 1;
+    z-index: 1000;
   }
   to {
     opacity: 0;
+    z-index: -1000;
   }
 }
 .menu-block__list {
@@ -304,14 +306,16 @@ h3, h4, ul, span {
 }
 .loader_frame {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   transform: rotate(45deg);
   z-index: 1001;
   top: 45vh;
   left: 45vw;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
 }
 .loader__square {
   width: 25px;
@@ -321,6 +325,7 @@ h3, h4, ul, span {
   opacity: 0;
   background-color: #9356DC;
   animation: appearence-top 2s forwards;
+  object-fit: contain;
   z-index: 1010;
 }
 .loader__square-right {
