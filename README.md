@@ -32,3 +32,19 @@ Sur tablette et desktop, le site devra s’adapter, mais ces supports n’étant
 <li>L’ensemble du site devra être responsive sur mobile, tablette et desktop.</li>
 <li>Les pages devront passer la validation W3C en HTML et CSS sans erreur.</li>
 <li>Le site doit être parfaitement compatible avec les dernières versions desktop deChrome et Firefox</li>
+
+<h3>Technologie</h3>
+
+<li>Le développement devra se faire en CSS, sans JavaScript.</li>
+<li>Aucun framework ne devra être utilisé, en revanche l’utilisation de SASS serait unplus</li>
+<li>Aucun code CSS ne devra être appliqué via un attribut style dans une balise HTML</li>
+
+<h3>Contenu des pages</h3>
+
+<h4>Page d'accueil (x1)</h4>
+<li></li>
+<li></li>
+<li></li>
+
+<h4>Pages de menu (x4)</h4>
+
