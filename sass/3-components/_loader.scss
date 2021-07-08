@@ -22,7 +22,7 @@
     z-index: 1000;
     background-color: white;
     animation: loading-transition 2s 2500ms forwards;
-    &_frame {
+    &__frame {
         position: absolute;
         width: 55px;
         height: 55px;

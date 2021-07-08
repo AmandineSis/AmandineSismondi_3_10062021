@@ -104,6 +104,11 @@ h3, h4, ul, span {
     margin: 20px auto;
   }
 }
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .resto-prev__heading h1 {
+    margin: 20px auto;
+  }
+}
 
 .btn {
   font-family: Roboto;
@@ -259,7 +264,7 @@ h3, h4, ul, span {
   box-shadow: 2px 2px 10px #9ba0a9;
   z-index: -1;
   background: #985ede;
-  background: linear-gradient(0deg, #a16be0 0%, #ff93e1 100%);
+  background: linear-gradient(0deg, #985ede 0%, #ff83dd 100%);
 }
 
 @keyframes load {
@@ -291,7 +296,7 @@ h3, h4, ul, span {
   background-color: white;
   animation: loading-transition 2s 2500ms forwards;
 }
-.loader_frame {
+.loader__frame {
   position: absolute;
   width: 55px;
   height: 55px;
@@ -451,9 +456,9 @@ footer .fas {
   padding: 50px 20px;
 }
 @media screen and (min-width: 1200px) {
-  .process {
-    width: 50%;
-    margin: 0 auto;
+  .process__frame {
+    display: flex;
+    justify-content: space-between;
   }
 }
 .process__select {
@@ -465,6 +470,11 @@ footer .fas {
   margin: 25px 0;
   border-radius: 20px;
   box-shadow: 2px 2px 20px #c4c7cc;
+}
+@media screen and (min-width: 1200px) {
+  .process__select {
+    width: 32%;
+  }
 }
 .process__select p {
   width: 25px;
@@ -495,19 +505,26 @@ footer .fas {
   padding: 30px 20px;
 }
 
-.resto-frame a {
+.resto__frame a {
   width: 100%;
 }
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .resto__frame a {
+    width: 50%;
+  }
+}
 @media screen and (min-width: 1200px) {
-  .resto-frame {
+  .resto__frame {
+    height: 400px;
     display: flex;
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .resto-frame {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .resto__frame {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -533,7 +550,7 @@ footer .fas {
     width: 95%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .resto-block {
     width: 95%;
   }

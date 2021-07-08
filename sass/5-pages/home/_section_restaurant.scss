@@ -3,26 +3,32 @@
     padding:  30px 20px;
 }    
 
-.resto-frame {
+.resto__frame {
     a {
         width: 100%;
+        @include for-tablet {
+            width: 50%;;
+        }
         }
     
     @include for-desktop {
+        height: 400px;
         display: flex;
         justify-content: space-between;
+        
     }
 
     @include for-tablet {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 }
 
 .resto-block {
         @include block;
         margin: 18px 0;
-       
+        
 
         &__pic {
             width: 100%;
