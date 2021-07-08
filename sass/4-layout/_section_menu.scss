@@ -3,10 +3,16 @@
    padding: 20px;
 } 
 
+.menu-frame {
+   @include for-desktop {
+      display: flex;
+   }
+}
 
 
 .menu-block {
-  
+   width: 100%;
+   
    &__list {
       height: 70px;
       margin-bottom: 16px;
@@ -17,7 +23,10 @@
       overflow: hidden;
       position: relative;
       @include block;
-
+      
+      @include for-desktop {
+         width: 90%;
+      }
       .dish__price {
          margin-right: 10px;
       }

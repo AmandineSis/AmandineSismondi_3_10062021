@@ -60,6 +60,11 @@ ul {
   font-size: 20px;
   margin: 0;
 }
+@media screen and (min-width: 1200px) {
+  .intro__heading, .process__heading, .resto__heading {
+    text-align: center;
+  }
+}
 
 .map__city, .intro__p {
   font-family: RobotoThin;
@@ -93,6 +98,11 @@ h3, h4, ul, span {
 .resto-prev__heading {
   font-family: Shrikhand;
   font-size: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .resto-prev__heading h1 {
+    margin: 20px auto;
+  }
 }
 
 .btn {
@@ -373,6 +383,15 @@ footer .fas {
   padding: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .menu-frame {
+    display: flex;
+  }
+}
+
+.menu-block {
+  width: 100%;
+}
 .menu-block__list {
   height: 70px;
   margin-bottom: 16px;
@@ -384,6 +403,11 @@ footer .fas {
   position: relative;
   border-radius: 20px;
   box-shadow: 2px 2px 20px #c4c7cc;
+}
+@media screen and (min-width: 1200px) {
+  .menu-block__list {
+    width: 90%;
+  }
 }
 .menu-block__list .dish__price {
   margin-right: 10px;
@@ -426,6 +450,12 @@ footer .fas {
 .process {
   padding: 50px 20px;
 }
+@media screen and (min-width: 1200px) {
+  .process {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
 .process__select {
   display: flex;
   justify-content: flex-start;
@@ -453,16 +483,32 @@ footer .fas {
   padding: 20px;
   color: #7e7e7e;
 }
-.process__select:hover {
+.process__select-last {
   background-color: #e4d5f6;
 }
-.process__select:hover i {
+.process__select-last i {
   color: #9356DC;
 }
 
 .resto {
   background-color: #f6f6f6;
   padding: 30px 20px;
+}
+
+.resto-frame a {
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .resto-frame {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .resto-frame {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .resto-block {
@@ -482,9 +528,20 @@ footer .fas {
   align-items: center;
   padding-right: 10px;
 }
+@media screen and (min-width: 1200px) {
+  .resto-block {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .resto-block {
+    width: 95%;
+  }
+}
 
 .resto-block__new {
   position: relative;
+  width: 100%;
 }
 .resto-block__new p {
   position: absolute;

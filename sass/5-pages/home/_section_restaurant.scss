@@ -3,9 +3,26 @@
     padding:  30px 20px;
 }    
 
+.resto-frame {
+    a {
+        width: 100%;
+        }
+    
+    @include for-desktop {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include for-tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 .resto-block {
         @include block;
         margin: 18px 0;
+       
 
         &__pic {
             width: 100%;
@@ -19,12 +36,21 @@
             align-items: center;
             padding-right: 10px; 
         }    
+
+        @include for-desktop {
+            width: 95%;
+        }
+
+        @include for-tablet {
+            width: 95%;
+        }
+
     }
 
 
 .resto-block__new {
     position: relative;
-  
+    width: 100%;
     p {
         position: absolute;
         top: 0px;
