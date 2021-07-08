@@ -20,7 +20,7 @@ Classes moyennes et supérieures, connectées et souvent pressées, souhaitant d
 <li>Secondaire: #FF79DA</li>
 <li>Tertiaire: #99E2D0</li>
 
-<img src="public/maquettes/maquettes-full">
+<img src="public/maquettes/maquettes-full.png">
 
 <h3>Compatibilité</h3>
 
