@@ -1,0 +1,72 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the presentation section of the site.
+// -----------------------------------------------------------------------------
+
+//Introduction to the site.
+.intro {
+    padding: $padding-home;
+    text-align: center;
+    @include neutral-bgGradient;
+}
+
+//How-to-proceed section.
+.process {
+    padding: $padding-home;
+
+    &__select {
+    //individual block layout.
+    height: 70px;
+    background-color: $colour-bgGradient;
+    margin: 25px 0;
+    @include block;    
+    //content aligned in the middle of the block.
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+        
+    p {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        color: $colour-white;
+        font-weight: bold;
+        background-color: $colour-primary;
+        //center number
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //positioned on the left border
+        position: relative;
+        left: -10px;    
+        }
+
+        i {
+            padding: 20px;
+            color: $colour-icon;
+        } 
+
+        &-last {
+                background-color: lighten($colour-primary, 30%);
+                i {
+                    color: $colour-primary;
+                }
+        }        
+    }
+}
+
+//--------------------------//
+//      Media queries       //
+//--------------------------//
+
+@include for-desktop {
+    .process{
+        &__frame {
+            display: flex;
+            justify-content: space-between;
+            }
+        &__select {
+            width: 32%;
+        }
+    }
+}

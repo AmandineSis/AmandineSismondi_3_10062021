@@ -1,6 +1,6 @@
 .resto {
     background-color: $colour-bg;
-    padding:  30px 20px;
+    padding:  $padding-home;
 }    
 
 .resto__frame {
@@ -11,18 +11,9 @@
         }
         }
     
-    @include for-desktop {
-        height: 400px;
-        display: flex;
-        justify-content: space-between;
-        
-    }
+   
 
-    @include for-tablet {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+    
 }
 
 .resto-block {
@@ -41,17 +32,10 @@
             justify-content: space-between;
             align-items: center;
             padding-right: 10px; 
-        }    
+        } 
+}
 
-        @include for-desktop {
-            width: 95%;
-        }
-
-        @include for-tablet {
-            width: 95%;
-        }
-
-    }
+    
 
 
 .resto-block__new {
@@ -67,6 +51,7 @@
         background-color: darken($colour-tertiary, 10);
     }
 }
+
 
 
 .resto-block__heart {
@@ -87,5 +72,29 @@
   }
     
 
+//--------------------------//
+//      Media queries       //
+//--------------------------//
 
+@include for-desktop {
+    .resto__frame {
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .resto-block {
+        width: 95%;
+    }
+}
 
+@include for-tablet {
+    .resto-block__frame {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .resto-block {
+        width: 95%;
+    }
+    
+}

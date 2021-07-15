@@ -1,7 +1,14 @@
-//
-//Basic typography style for copy text
-//
+//----------------------------------------
+//Basic typography style for copy text.
+//----------------------------------------
 
+body {
+    font-family: Roboto, RobotoThin, Shrikhand, Arial, verdana, sans-serif;
+}
+
+.loader__circle {
+    font-family: shrikhand;
+}
 
 .intro, .process, .resto{
     &__heading {
@@ -14,9 +21,15 @@
     }
 }
 
-.map__city, .intro__p {
+.map__city, .intro__content {
     font-family: RobotoThin;
     font-size: 14px;
+}
+
+.btn {
+    font-family: Roboto;
+    font-size: 14px;
+    color: white;
 }
 
 .menu-block__heading {

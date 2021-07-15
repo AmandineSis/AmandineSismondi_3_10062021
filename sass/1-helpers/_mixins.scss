@@ -1,4 +1,6 @@
 
+
+
 //restaurants cards and menu blocks
 @mixin blockLayout {
     width: 95%;
@@ -6,6 +8,20 @@
     box-shadow: 2px 2px 2px $colour-shadow ;
 }
 
+//Background gradient for home page
+@mixin neutral-bgGradient {
+    background: $colour-bgGradient;
+    background: linear-gradient(
+        0deg, 
+        rgba(246,246,246,1) 0%, 
+        rgba(255,255,255,1) 100%);    
+}
+
+//Loader background
+@mixin loader-bg {
+    background-color: $colour-black;
+    opacity: 0.8;
+}
 
 //Gradient for button BG
 @mixin gradient{
@@ -31,6 +47,8 @@
                   -webkit-background-clip: text;
                   -webkit-text-fill-color: transparent;
 }
+
+
 
 //resto-block and menu-block layout
 @mixin block {

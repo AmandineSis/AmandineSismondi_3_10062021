@@ -1,3 +1,8 @@
+// -----------------------------------------------------------------------------
+// This file contains the heart style for favourite menu.
+// -----------------------------------------------------------------------------
+
+
 .resto-block__heart {
     position: relative;
     &--empty {
@@ -14,3 +19,8 @@
         @include gradient-heart;
     }
   }
+
+
+
+
+  

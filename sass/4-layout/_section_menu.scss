@@ -1,18 +1,16 @@
+//----------------------------------------
+// This file contains all styles related to the menu section of the site.
+//----------------------------------------
+
 .menu {
    background-color: $colour-bg;
    padding: 20px;
 } 
 
-.menu-frame {
-   @include for-desktop {
-      display: flex;
-   }
-}
-
 
 .menu-block {
    width: 100%;
-   
+//menu items block layout   
    &__list {
       height: 70px;
       margin-bottom: 16px;
@@ -24,12 +22,11 @@
       position: relative;
       @include block;
       
-      @include for-desktop {
-         width: 90%;
-      }
+//price position     
       .dish__price {
          margin-right: 10px;
       }
+//selector layout and position      
       .dish__select {
          width: 70px;
          height: 70px;
@@ -44,10 +41,22 @@
          position: absolute;
          right: -70px;
       }
+//selector icon color      
       .fas {
          color: white;
       }
-         
    }
+}
 
+//--------------------------//
+//      Media queries       //
+//--------------------------//
+
+@include for-desktop {
+   .menu-frame {
+      display: flex;
+   }
+   .menu-block__list{
+      width: 90%;
+   }
 }
