@@ -21,6 +21,7 @@ Classes moyennes et supérieures, connectées et souvent pressées, souhaitant d
 <li>Primaire: #9356DC</li>
 <li>Secondaire: #FF79DA</li>
 <li>Tertiaire: #99E2D0</li>
+</br>
 
 <img src="public/maquettes/maquettes-full.png">
 
