@@ -42,9 +42,29 @@ Sur tablette et desktop, le site devra s’adapter, mais ces supports n’étant
 <h3>Contenu des pages</h3>
 
 <h4>Page d'accueil (x1)</h4>
-<li></li>
-<li></li>
-<li></li>
+<li>Affichage de la localisation des restaurants. À terme il sera possible de choisir sa
+localisation pour trouver des restaurants proches d’un certain lieu.
+</li>
+<li>Une courte présentation de l’entreprise.
+</li>
+<li>Une section contenant les 4 menus sous forme cartes. Au clic sur la carte,
+l’utilisateur est redirigé vers la page du menu.</li>
 
 <h4>Pages de menu (x4)</h4>
 
+<li>4 pages contenant chacune le menu d’un restaurant.</li>
+
+<h4>Footer</h4>
+
+<li>Le footer est identique sur toutes les pages.</li>
+<li> Au clic sur “Contact”, un renvoi vers une adresse mail est effectué.</li>
+
+<h4>Header</h4>
+<li> Le header est présent sur toutes les pages.</li>
+<li> Sur la page d’accueil, il contient le logo du site.</li>
+<li> Sur les pages de menu, il contient en plus un bouton de retour vers la page d’accueil.</li>
+
+<h3>Effets graphiques et animations</h3>
+
+<p>Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils devront utiliser
+les animations ou transitions CSS, pas de JavaScript ni de librairie.</p>
