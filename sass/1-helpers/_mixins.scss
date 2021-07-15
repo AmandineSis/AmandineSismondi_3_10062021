@@ -17,6 +17,21 @@
         ); 
 }
 
+@mixin gradient-lighter  {
+    background: lighten(rgb(147,86,220), 2) ;
+    background: linear-gradient(
+        0deg, 
+        lighten(rgb(147,86,220), 2) 0%, 
+        lighten(rgba(255,121,218,1), 2) 100%
+        ); 
+}
+
+@mixin gradient-heart {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,121,218,1)), to(rgba(147,86,220,1)));
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+}
+
 //resto-block and menu-block layout
 @mixin block {
     border-radius: $borderRadius-block;
@@ -28,3 +43,4 @@
     line-height: 1;
 
 }
+

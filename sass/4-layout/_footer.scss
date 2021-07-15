@@ -1,21 +1,48 @@
-footer {
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site.
+// -----------------------------------------------------------------------------
+
+
+.footer {
     
     padding: 20px;
     background-color: $colour-bgFooter;
-    color: white;
-    .logo {
+    color: $colour-white;
+    &__logo {
         height: 16px;
-    
-    }
-    a {
-        color:white;
-    }
-    ul {
+        }
+    &__list {
+        list-style: none;
         line-height: 24px;
         padding: 0;
+        a {
+            color:$colour-white;
+            }
+        .fas {
+            width: 25px;
+            }       
         }
-    .fas {
-        width: 25px;
-    }    
-
 }
+
+        
+@include for-desktop {
+    .footer {
+//center footer logo on desktop version        
+        &__logo {
+            display: block;
+            margin: 0 auto;
+        }
+//display footer links inline on desktop version        
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 30px;
+            margin-right: 30px;
+            a {
+                width: 25%;
+                border-right: $colour-white solid 2px;
+            }
+        }
+    }
+    
+} 

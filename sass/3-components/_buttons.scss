@@ -8,8 +8,30 @@
     margin: 20px 0;
     border-radius: $borderRadius-btn; 
     border: none;
+    position: relative;
     box-shadow: $box-shadow;
     @include gradient;
     text-align: center;
+    z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        border-radius: $borderRadius-btn; 
+        box-shadow: $box-shadow-darken;
+        z-index: -1;
+        //background-color: blue;
+        @include gradient-lighter;
+    }
 }
 

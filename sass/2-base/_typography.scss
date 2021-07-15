@@ -8,6 +8,9 @@
         font-family: Roboto;
         font-size: 20px;
         margin: 0;
+        @include for-desktop {
+            text-align: center;
+        }
     }
 }
 
@@ -16,28 +19,48 @@
     font-size: 14px;
 }
 
-.menu-block__heading span{
+.menu-block__heading {
+
+    span{
     padding-bottom: 5px;
     border-bottom: 2px solid $colour-tertiary;
+    }
 }
 
 h3, h4, ul, span{
     font-family: Roboto;
     font-size: 14px;
+    
+
 }
-.name p{
+.name {
+    p{
     font-family: RobotoThin;
     font-size: 14px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     margin-top: -12px;
+    }
+    h4 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    }
 }
 
 
 .resto-prev__heading {
     font-family: Shrikhand;
     font-size: 12px;
+    h1 {
+        @include for-desktop {
+            margin: 20px auto;
+        }
+        @include for-tablet {
+            margin: 20px auto;
+        }
+    }
 }
 
 .btn {

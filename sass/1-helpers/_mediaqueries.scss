@@ -1,0 +1,7 @@
+@mixin for-tablet {
+    @media screen and(min-width: 767px) and (max-width: 1199px) { @content; }
+  }
+
+@mixin for-desktop {
+    @media screen and (min-width: 1200px) {@content} 
+} 

@@ -3,19 +3,23 @@
     
     &__pic {
         height: 260px;
+        width: 100%;
         object-fit: cover;
     }
     &__heading {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-
+        
         position: relative;
         top: -30px;
     
         background: $colour-bg;
         padding: 10px;
-        border-radius: 20px 20px 0 0
+        border-radius: 20px 20px 0 0;
+        
+        
     }
 }
+
+

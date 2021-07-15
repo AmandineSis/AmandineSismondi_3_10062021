@@ -3,9 +3,32 @@
     padding:  30px 20px;
 }    
 
+.resto__frame {
+    a {
+        width: 100%;
+        @include for-tablet {
+            width: 50%;;
+        }
+        }
+    
+    @include for-desktop {
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    @include for-tablet {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
 .resto-block {
         @include block;
         margin: 18px 0;
+        
 
         &__pic {
             width: 100%;
@@ -19,13 +42,49 @@
             align-items: center;
             padding-right: 10px; 
         }    
+
+        @include for-desktop {
+            width: 95%;
+        }
+
+        @include for-tablet {
+            width: 95%;
+        }
+
     }
 
 
+.resto-block__new {
+    position: relative;
+    width: 100%;
+    p {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        padding: 3px 10px;
+        font-family: RobotoBold;
+        color: darken($colour-tertiary, 40);
+        background-color: darken($colour-tertiary, 10);
+    }
+}
 
 
-
-
+.resto-block__heart {
+    position: relative;
+    &--empty {
+        position: absolute;
+        right: 0px;
+        top: -10px;
+    
+    }
+    &--full {
+        position: absolute;
+        right: 0px;
+        top: -10px;   
+        z-index: 1;
+        @include gradient-heart;
+    }
+  }
     
 
 

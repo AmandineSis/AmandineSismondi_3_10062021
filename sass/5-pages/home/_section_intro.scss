@@ -12,6 +12,13 @@
 
 .process {
     padding: 50px 20px;
+    &__frame {
+        @include for-desktop {
+            display: flex;
+            justify-content: space-between;
+            }
+    }
+      
     &__select {
         display: flex;
         justify-content: flex-start;
@@ -20,6 +27,9 @@
         background-color: $colour-bgGradient;
         margin: 25px 0;
         @include block;
+        @include for-desktop {
+            width: 32%;
+        }
 
         p {
             width: 25px;
@@ -40,16 +50,16 @@
         i {
             padding: 20px;
             color: $colour-icon;
+        } 
 
+        &-last {
+                background-color: lighten($colour-primary, 30%);
+                i {
+                    color: $colour-primary;
+                }
         }
-
-        &:hover {
-            background-color: lighten($colour-primary, 30%);
-            i {
-                color: $colour-primary;
-            }
-
-        }
+        
     }
 }
+
 
