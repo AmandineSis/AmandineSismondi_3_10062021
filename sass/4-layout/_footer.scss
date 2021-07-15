@@ -41,6 +41,7 @@
             &--items {
                 width: 100%;
                 text-align: center;
+//add separator between links    
                 border-right: $colour-white solid 2px;   
                 &:nth-child(4) {
                     border-right: none;

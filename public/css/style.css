@@ -331,12 +331,12 @@ h3, h4, ul, span {
   z-index: 1008;
 }
 
-header {
+.header {
   display: flex;
   align-items: center;
   padding: 20px;
 }
-header .logo {
+.header__logo {
   width: 100%;
   height: 24px;
 }
