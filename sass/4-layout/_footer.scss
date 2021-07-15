@@ -15,7 +15,7 @@
         list-style: none;
         line-height: 24px;
         padding: 0;
-        a {
+        &--items a{
             color:$colour-white;
             }
         .fas {
@@ -38,10 +38,15 @@
             justify-content: space-between;
             margin-left: 30px;
             margin-right: 30px;
-            a {
-                width: 25%;
-                border-right: $colour-white solid 2px;
+            &--items {
+                width: 100%;
+                text-align: center;
+                border-right: $colour-white solid 2px;   
+                &:nth-child(4) {
+                    border-right: none;
+                }
             }
+            
         }
     }
     
