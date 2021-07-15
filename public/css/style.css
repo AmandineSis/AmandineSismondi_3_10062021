@@ -274,9 +274,10 @@ h3, h4, ul, span {
   width: 110px;
   height: 110px;
   transform: rotate(45deg);
+  transform-origin: 0 0;
   z-index: 100;
-  top: 40vh;
-  left: 35vw;
+  top: 40%;
+  left: 50%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -461,7 +462,7 @@ h3, h4, ul, span {
   justify-content: flex-start;
   align-items: center;
 }
-.process__select p {
+.process__select--number {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -474,7 +475,7 @@ h3, h4, ul, span {
   position: relative;
   left: -10px;
 }
-.process__select i {
+.process__select--icon {
   padding: 20px;
   color: #7e7e7e;
 }
@@ -499,13 +500,8 @@ h3, h4, ul, span {
   padding: 30px 20px;
 }
 
-.resto__frame a {
+.resto__card {
   width: 100%;
-}
-@media screen and (min-width: 767px) and (max-width: 1199px) {
-  .resto__frame a {
-    width: 50%;
-  }
 }
 
 .resto-block {
@@ -570,10 +566,15 @@ h3, h4, ul, span {
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1199px) {
-  .resto-block__frame {
+  .resto__frame {
+    height: 550px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  .resto__card {
+    width: 50%;
   }
 
   .resto-block {

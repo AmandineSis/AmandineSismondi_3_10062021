@@ -1,25 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the restaurant section on the home page.
+// -----------------------------------------------------------------------------
+
+
+//Restaurant cards layout
 .resto {
     background-color: $colour-bg;
     padding:  $padding-home;
 }    
 
-.resto__frame {
-    a {
+.resto__card{
         width: 100%;
-        @include for-tablet {
-            width: 50%;;
-        }
-        }
-    
-   
+    }  
 
-    
-}
-
+//block picture + restaurant name
 .resto-block {
         @include block;
         margin: 18px 0;
-        
 
         &__pic {
             width: 100%;
@@ -35,9 +32,7 @@
         } 
 }
 
-    
-
-
+//green tag "nouveau" on new restaurants.
 .resto-block__new {
     position: relative;
     width: 100%;
@@ -52,8 +47,7 @@
     }
 }
 
-
-
+//Favourite restaurant heart icon position
 .resto-block__heart {
     position: relative;
     &--empty {
@@ -76,6 +70,7 @@
 //      Media queries       //
 //--------------------------//
 
+//display restaurant cards on one row.
 @include for-desktop {
     .resto__frame {
         height: 400px;
@@ -87,11 +82,17 @@
     }
 }
 
+//display restaurants cards on 2 rows.
 @include for-tablet {
-    .resto-block__frame {
+   .resto__frame {
+        height : 550px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+   .resto__card {
+    width: 50%;
+        
     }
     .resto-block {
         width: 95%;
