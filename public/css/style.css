@@ -324,7 +324,7 @@ h3, h4, ul, span {
 }
 
 .footer {
-  padding: 5px;
+  padding: 15px;
   background-color: #353535;
   color: white;
 }
@@ -351,8 +351,8 @@ h3, h4, ul, span {
   .footer__list {
     display: flex;
     justify-content: space-between;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .footer__list--items {
     width: 100%;
