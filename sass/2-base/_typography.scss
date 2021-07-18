@@ -47,6 +47,9 @@ h3, h4, ul, span{
 
 }
 .name {
+    width: 80%;
+    padding-left: 10px;
+    line-height: 1;
     p{
     font-family: RobotoThin;
     font-size: 14px;
@@ -62,6 +65,9 @@ h3, h4, ul, span{
     }
 }
 
+.resto-block__heart {
+    font-size: 20px;
+  }
 
 .resto-prev__heading {
     font-family: Shrikhand;

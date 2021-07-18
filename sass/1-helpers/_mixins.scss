@@ -1,4 +1,6 @@
-
+// -----------------------------------------------------------------------------
+// This file contains all the mixins of the site.
+// -----------------------------------------------------------------------------
 
 
 //restaurants cards and menu blocks
@@ -32,7 +34,7 @@
         rgba(255,121,218,1) 100%
         ); 
 }
-
+//Lighter gradient for button BG
 @mixin gradient-lighter  {
     background: lighten(rgb(147,86,220), 2) ;
     background: linear-gradient(
@@ -42,13 +44,12 @@
         ); 
 }
 
+//Gradient for heart filling
 @mixin gradient-heart {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,121,218,1)), to(rgba(147,86,220,1)));
                   -webkit-background-clip: text;
                   -webkit-text-fill-color: transparent;
 }
-
-
 
 //resto-block and menu-block layout
 @mixin block {
@@ -56,9 +57,9 @@
     box-shadow: $box-shadow;
 }
 
+//restaurant and dishes name
 @mixin name {
     padding-left: 10px;
     line-height: 1;
-
 }
 

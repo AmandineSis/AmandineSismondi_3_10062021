@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 
-// Set up a decent box model on the root element
+// Box model set up on the root element
 body {
     max-width: 1300px;
     box-sizing: border-box;
@@ -11,7 +11,6 @@ body {
     overflow-x:hidden;
 
   }
-  
   
 // Make all elements from the DOM inherit from the parent box-sizing
  
@@ -32,18 +31,10 @@ a:visited {
     color:inherit;
 }
 
-
-.resto-block__heart {
-  font-size: 20px;
-}
-
-.name {
-  width: 80%;
-  padding-left: 10px;
-  line-height: 1;
-} 
-
 *:hover {
   cursor: pointer;
 }
+
+
+
 
