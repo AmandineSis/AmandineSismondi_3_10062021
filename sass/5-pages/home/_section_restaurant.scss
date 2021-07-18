@@ -73,7 +73,7 @@
 //display restaurant cards on one row.
 @include for-desktop {
     .resto__frame {
-        height: 350px;
+        height: 300px;
         display: flex;
         justify-content: space-between;
     }
