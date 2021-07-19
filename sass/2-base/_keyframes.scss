@@ -5,10 +5,17 @@
 //menu selection slider
 @keyframes slide-left {
     from{transform: translateX(0px)}
-    to{transform: translateX(-70px)}
-   
+    to{transform: translateX(-70px)}  
 }
 
+@keyframes appearence {
+    from { transform: translateY(10px); 
+           opacity: 0;
+        }
+    to { transform: translateY(0px);
+         opacity: 1 ;
+        }
+}
 //loader transition and animation
 @keyframes load {
     0% {opacity: 1;}

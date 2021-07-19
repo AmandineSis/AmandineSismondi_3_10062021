@@ -21,16 +21,6 @@ a:visited {
   color: inherit;
 }
 
-.resto-block__heart {
-  font-size: 20px;
-}
-
-.name {
-  width: 80%;
-  padding-left: 10px;
-  line-height: 1;
-}
-
 *:hover {
   cursor: pointer;
 }
@@ -91,6 +81,11 @@ h3, h4, ul, span {
   font-size: 14px;
 }
 
+.name {
+  width: 80%;
+  padding-left: 10px;
+  line-height: 1;
+}
 .name p {
   font-family: RobotoThin;
   font-size: 14px;
@@ -103,6 +98,10 @@ h3, h4, ul, span {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.resto-block__heart {
+  font-size: 20px;
 }
 
 .resto-prev__heading {
@@ -126,6 +125,16 @@ h3, h4, ul, span {
   }
   to {
     transform: translateX(-70px);
+  }
+}
+@keyframes appearence {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 @keyframes load {
